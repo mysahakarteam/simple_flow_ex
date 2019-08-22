@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="288fa7de-ba92-43c6-8f27-c4ff13dc28ab" config-ref="HTTP_Listener_config" path="/simpleflow"/>
 		<logger level="INFO" doc:name="Logger" doc:id="6d7e012d-a635-4b97-a01a-65d2d3de0246" message="Request Recieved"/>
 		<flow-ref doc:name="Flow Reference" doc:id="0dcc07c4-4d2d-4538-a5d4-4ff01871a914" name="simple_flow_exSub_Flow"/>
-		<set-payload value="flow is working" doc:name="Set Payload" doc:id="1c6215b6-28d2-444d-95a8-2339f48eefa5" />
+		<set-payload value="flow is working sub flow is also executed" doc:name="Set Payload" doc:id="1c6215b6-28d2-444d-95a8-2339f48eefa5" />
 	</flow>
 	<sub-flow name="simple_flow_exSub_Flow" doc:id="949e315b-2d84-4c9d-8637-ece371cfc1c3" >
 		<logger level="INFO" doc:name="Logger" doc:id="ef4ab5fd-3e9e-4b78-ba8d-e488bf4d03ce" message="in sub flow"/>
